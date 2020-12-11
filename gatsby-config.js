@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://localhost:1337",
+        apiURL: process.env.API_URL || "https://ianbandrade-blog.herokuapp.com",
         contentTypes: ["article", "category", "writer"],
         singleTypes: [`homepage`, `global`],
       },
