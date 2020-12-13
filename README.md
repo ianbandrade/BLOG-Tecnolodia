@@ -24,12 +24,13 @@
 
 ## About
 
-Project created from Next Level Week, offered by [Rocketseat](https://rocketseat.com.br/). The idea of the project is to connect people who want to learn from those who want to teach, from an online platform. It is possible to find teachers available for the subjects available in the system.
+The idea came up with the intention of passing on some knowledge about technology and my day to day, from a blog. Thus, this project is a way that I found interesting to make it possible for me to expose some information in a practical and quick way.
 
 ## Techs
 
 - GraphQL
 - Gatsby
+- Strapi (backend integration)
 
 ## Run
 
@@ -40,7 +41,7 @@ Project created from Next Level Week, offered by [Rocketseat](https://rocketseat
 $ git clone https://github.com/ianbandrade/BLOG-Tecnolodia.git
 ```
 
-### Run the server API
+### Run web
 
 ```bash
 # Go to server folder
@@ -53,22 +54,7 @@ $ yarn install
 $ gatsby develop
 ```
 
-Access API at http://localhost:8000/
-
-### Run web
-
-```bash
-# Go to web folder
-$ cd PROFFY_Project/web
-
-# Install Dependencies
-$ yarn install
-
-# Run Aplication
-$ yarn start
-```
-
-Go to http://localhost:3000/ to see the result.
+Go to http://localhost:8000/ to see the result.
 
 ## License
 
