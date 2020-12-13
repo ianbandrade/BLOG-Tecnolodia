@@ -17,7 +17,7 @@
 ## Layout
 
 <div align="center">
-  <img height="350px" alt="Landing desktop" src="./assets/images/home.png">
+  <img height="500px" alt="Landing desktop" src="./assets/images/home.png">
     &nbsp;&nbsp;&nbsp;
 
 </div>
@@ -44,7 +44,7 @@ $ git clone https://github.com/ianbandrade/BLOG-Tecnolodia.git
 ### Run web
 
 ```bash
-# Go to server folder
+# Go to folder
 $ cd BLOG-Tecnolodia
 
 # Install Dependencies
