@@ -2,7 +2,7 @@
   <img width="150px" alt="Logo" src="./src/images/icon.svg"/>
 </div>
 
-<p align="center">
+<div align="center">
   <a href="#layout">Layout</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#about">About</a>
@@ -12,7 +12,7 @@
   <a href="#run">Run</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
-</p>
+</div>
 
 ## Layout
 
@@ -59,3 +59,10 @@ Go to http://localhost:8000/ to see the result.
 ## License
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
+
+## <div align="center">Status
+</div>
+
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/2404308a-820b-42eb-931f-1fb09406df4e/deploy-status)](https://app.netlify.com/sites/tecnolodia/deploys)
+
+  
