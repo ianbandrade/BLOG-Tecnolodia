@@ -60,9 +60,12 @@ Go to http://localhost:8000/ to see the result.
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
 
-## <div align="center">Status
-</div>
+### <div align="center">Status
+
+<div align="center">
+
+<br/>
 
   [![Netlify Status](https://api.netlify.com/api/v1/badges/2404308a-820b-42eb-931f-1fb09406df4e/deploy-status)](https://app.netlify.com/sites/tecnolodia/deploys)
 
-  
+  </div>
