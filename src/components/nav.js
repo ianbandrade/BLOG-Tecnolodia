@@ -1,4 +1,5 @@
 import React from "react"
+import MenuIcon from '../images/menu.svg'
 import { Link, StaticQuery, graphql } from "gatsby"
 
 const Nav = () => (
@@ -27,7 +28,7 @@ const Nav = () => (
                 className="uk-button uk-button-default uk-margin-right uk-button-small"
                 type="button"
               >
-                <i uk-icon="icon: menu; ratio: 1"></i>
+                <img src={MenuIcon} alt="Menu icon"/>
               </button>
 
               <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 600">
