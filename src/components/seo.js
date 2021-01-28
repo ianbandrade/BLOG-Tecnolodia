@@ -88,7 +88,7 @@ const SEO = ({ seo = {} }) => {
         {
           rel: "stylesheet",
           href:
-            "https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css",
+            "https://cdn.jsdelivr.net/npm/uikit@3.6.14/dist/css/uikit.min.css",
         },
       ]}
       script={[
@@ -97,11 +97,11 @@ const SEO = ({ seo = {} }) => {
             "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js",
         },
         {
-          src:
-            "https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js",
+          src: "https://cdn.jsdelivr.net/npm/uikit@3.6.14/dist/js/uikit.min.js",
         },
         {
-          src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js",
+          src:
+            "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.14/js/uikit.js",
         },
       ]}
       meta={metaTags}
