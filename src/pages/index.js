@@ -1,4 +1,5 @@
 import React from "react"
+import { Box } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import ArticlesComponent from "../components/articles"
@@ -8,14 +9,14 @@ const IndexPage = () => {
   const data = useStaticQuery(query)
 
   return (
-    <Layout seo={data.strapiHomepage.seo}>
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
+    <Box>
+      <Layout seo={data.strapiHomepage.seo}>
+        <Box p={5}>
           <h1>{data.strapiHomepage.hero.title}</h1>
           <ArticlesComponent articles={data.allStrapiArticle.edges} />
-        </div>
-      </div>
-    </Layout>
+        </Box>
+      </Layout>
+    </Box>
   )
 }
 
