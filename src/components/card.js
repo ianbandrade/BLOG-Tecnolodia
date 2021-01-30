@@ -5,15 +5,15 @@ import { Box, Badge, Heading, Flex, Text, Divider } from "@chakra-ui/react"
 
 const Card = ({ article }) => {
   return (
-    <Link to={`/article/${article.node.slug}`} className="uk-link-reset">
+    <Link to={`/article/${article.node.slug}`}>
       <Box p={2}>
-        <Box>
+        <Box p={1}>
           <Img
             fixed={article.node.image.childImageSharp.fixed}
             imgStyle={{ position: "static" }}
           />
         </Box>
-        <Box>
+        <Box p={1}>
           <Badge variant="outline">{article.node.category.name}</Badge>
           <Heading mb={1}>{article.node.title}</Heading>
           <Box>
@@ -29,7 +29,9 @@ const Card = ({ article }) => {
                 )}
               </Box>
               <Box w="200px">
-                <Text fontSize="lg">{article.node.author.name}</Text>
+                <Text color="#333333" fontSize="lg">
+                  {article.node.author.name}
+                </Text>
               </Box>
             </Flex>
           </Box>
