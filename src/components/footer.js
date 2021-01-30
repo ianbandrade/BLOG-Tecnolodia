@@ -4,7 +4,7 @@ import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io"
 
 const Footer = () => {
   return (
-    <Box bgColor="#edf2f7">
+    <Box bgColor="#edf2f7" p={5}>
       <Center>
         <Flex>
           <IoLogoInstagram />
