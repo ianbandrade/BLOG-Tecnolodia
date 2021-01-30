@@ -88,6 +88,11 @@ p > .uk-icon > svg{
   margin: auto 0;
 }
 
+svg  {
+  margin-bottom: 2px;
+  margin-right: 10px;
+}
+
 @media (max-width: 425px) {
   h1 {
     font-size: 70px !important;

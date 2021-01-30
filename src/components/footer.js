@@ -1,21 +1,22 @@
 import React from "react"
+import { Box, Center, Text, Flex, Spacer } from "@chakra-ui/react"
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io"
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="uk-navbar-container uk-text-center">
-        <p>
-          <i uk-icon="icon: mail"></i>
-          ianbandrade14@gmail.com
-        </p>
-        <p>
-          <i uk-icon="icon: github"></i>
-          <i uk-icon="icon: instagram"></i>
-          <i uk-icon="icon: twitter"></i>
-          ianbandrade
-        </p>
-      </div>
-    </footer>
+    <Box bgColor="#edf2f7">
+      <Center>
+        <Flex>
+          <IoLogoInstagram />
+          <Spacer />
+          <IoLogoLinkedin />
+          <Spacer />
+          <IoLogoGithub />
+          <Spacer />
+          <Text fontSize="md">/ianbandrade</Text>
+        </Flex>
+      </Center>
+    </Box>
   )
 }
 

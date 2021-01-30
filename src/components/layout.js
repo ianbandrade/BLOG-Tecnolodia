@@ -25,7 +25,9 @@ const Layout = ({ children, seo }) => (
         <Seo seo={seo} />
         <Nav />
         <main>{children}</main>
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </>
     )}
   />
