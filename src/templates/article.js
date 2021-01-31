@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Moment from "react-moment"
 import Layout from "../components/layout"
 import { MarkdownPreview } from "react-marked-markdown"
+import { Box, Text } from "@chakra-ui/react"
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -46,16 +47,18 @@ const Article = ({ data }) => {
 
   return (
     <Layout seo={seo}>
-      <div>
-        <div
+      <Box>
+        <Box
+          h={300}
           id="banner"
-          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
           data-src={article.image.publicURL}
           data-srcset={article.image.publicURL}
           data-uk-img
         >
-          <h1>{article.title}</h1>
-        </div>
+          <Text id="banner-text" fontSize="4xl" color="#33333">
+            {article.title}
+          </Text>
+        </Box>
 
         <div className="uk-section">
           <div className="uk-container uk-container-small">
@@ -84,7 +87,7 @@ const Article = ({ data }) => {
             </div>
           </div>
         </div>
-      </div>
+      </Box>
     </Layout>
   )
 }

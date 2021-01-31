@@ -39,15 +39,31 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.13636 !important;
 }
 
-#banner {
-  margin: 20px !important;
-  height: 800px !important;
-}
-
 #editor {
   font-size: 16px !important;
   font-size: 1rem !important;
   line-height: 1.75 !important;
+}
+
+#banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-text {
+  font-family: Staatliches;
+  background-color: #edf2f791; 
+  color: #333333;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 2;
+  padding: 5px;
+  text-align: center; 
 }
 
 .uk-navbar-container {
@@ -93,7 +109,7 @@ svg  {
   margin-right: 10px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 70px !important;
     text-align: center;
