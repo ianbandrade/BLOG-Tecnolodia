@@ -8,7 +8,7 @@ a {
 
 h1 {
   font-family: Staatliches !important;
-  font-size: 120px !important;
+  font-size: 80px !important;
 }
 
 body::-webkit-scrollbar {
@@ -24,12 +24,9 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #666;
 }
 
-.uk-button-small {
+button {
   padding: 0 5px !important;
-}
-
-.uk-button.uk-button-default.uk-margin-right.uk-button-small {
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 #title {
@@ -66,9 +63,8 @@ body::-webkit-scrollbar-thumb {
   text-align: center; 
 }
 
-.uk-navbar-container {
-  background: #fff !important;
-  font-family: Staatliches !important;
+#article {
+  text-align: center !important;
 }
 
 img:hover {
@@ -76,28 +72,18 @@ img:hover {
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
 }
 
-p, .uk-text-center {
-  font-size: 25px;
-}
-
-.uk-navbar-container.uk-text-center {
-  padding: 5px;
-}
-
-.uk-navbar-container.uk-text-center > p {
-  font-size: 16px;
-
-  margin: auto 0;
-
-  font-family: Roboto !important;
-}
-
-p > .uk-icon {
+p {
+  font-size: 18px;
   padding-right: 5px;
   margin-bottom: 10px;
 }
 
-p > .uk-icon > svg{
+li {
+  list-style-type: square;
+  font-size: 17px;
+}
+
+p >  svg{
   width: 25px;
   height: 23px;
 
@@ -111,13 +97,18 @@ svg  {
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 70px !important;
+    font-size: 55px !important;
     text-align: center;
   }
 
-  p, .uk-text-center {
-    font-size: 20px;
+  h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  p{
+    font-size: 19px;
     margin: 5%;
+    text-align: start;
   }
 
   nav {
