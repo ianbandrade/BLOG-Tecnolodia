@@ -9,14 +9,12 @@ const IndexPage = () => {
   const data = useStaticQuery(query)
 
   return (
-    <Box>
-      <Layout seo={data.strapiHomepage.seo}>
-        <Box p={5}>
-          <h1>{data.strapiHomepage.hero.title}</h1>
-          <ArticlesComponent articles={data.allStrapiArticle.edges} />
-        </Box>
-      </Layout>
-    </Box>
+    <Layout seo={data.strapiHomepage.seo}>
+      <Box p={5}>
+        <h1>{data.strapiHomepage.hero.title}</h1>
+        <ArticlesComponent articles={data.allStrapiArticle.edges} />
+      </Box>
+    </Layout>
   )
 }
 

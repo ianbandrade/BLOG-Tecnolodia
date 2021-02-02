@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import ArticlesComponent from "../components/articles"
 import Layout from "../components/layout"
+import { Box } from "@chakra-ui/react"
 
 export const query = graphql`
   query Category($slug: String!) {
@@ -51,12 +52,12 @@ const Category = ({ data }) => {
 
   return (
     <Layout seo={seo}>
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
+      <Box>
+        <Box p={5}>
           <h1>{category}</h1>
           <ArticlesComponent articles={articles} />
-        </div>
-      </div>
+        </Box>
+      </Box>
     </Layout>
   )
 }

@@ -6,7 +6,7 @@ import { Box, Badge, Heading, Flex, Text, Divider } from "@chakra-ui/react"
 const Card = ({ article }) => {
   return (
     <Link to={`/article/${article.node.slug}`}>
-      <Box p={2}>
+      <Box>
         <Box p={1}>
           <Img
             fixed={article.node.image.childImageSharp.fixed}

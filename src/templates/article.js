@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import Moment from "react-moment"
 import Layout from "../components/layout"
 import { MarkdownPreview } from "react-marked-markdown"
-import { Box, Text, Divider } from "@chakra-ui/react"
+import { Box, Text, Divider, Flex } from "@chakra-ui/react"
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -66,8 +66,8 @@ const Article = ({ data }) => {
               <MarkdownPreview value={article.content} />
             </Box>
             <Divider orientation="horizontal" />
-            <Box>
-              <Box>
+            <Flex>
+              <Box w="40px">
                 {article.author.picture && (
                   <Img
                     fixed={article.author.picture.childImageSharp.fixed}
@@ -75,17 +75,17 @@ const Article = ({ data }) => {
                   />
                 )}
               </Box>
-              <Box className="uk-width-expand">
-                <p className="uk-margin-remove-bottom">
+              <Box w="200px">
+                <Text color="#333333" fontSize="lg">
                   Por {article.author.name}
-                </p>
-                <p className="uk-text-meta uk-margin-remove-top">
+                </Text>
+                <Text className="uk-text-meta uk-margin-remove-top">
                   <Moment locale="pt-br" format="DD/MM/YYYY - h:mm">
                     {article.published_at}
                   </Moment>
-                </p>
+                </Text>
               </Box>
-            </Box>
+            </Flex>
           </Box>
         </Box>
       </Box>
