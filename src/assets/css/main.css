@@ -10,6 +10,15 @@ div > a {
   margin-right: 5px;
 }
 
+.chakra-menu__menu-list.css-1qqhaef > a {
+  margin-right: 0;
+  z-index: 5;
+}
+
+button {
+  padding: 0;
+}
+
 h1 {
   font-family: Staatliches !important;
   font-size: 80px !important;
@@ -26,11 +35,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #777;
   outline: 1px solid #666;
-}
-
-button {
-  padding: 0 5px !important;
-  border-radius: 5px;
 }
 
 #title {
@@ -63,13 +67,25 @@ button {
   color: #333333;
   font-weight: bold;
   border-radius: 5px;
-  z-index: 2;
+  z-index: 1.5;
   padding: 5px;
   text-align: center;
 }
 
 #article {
   text-align: center !important;
+}
+
+#not-found {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#not-found > * {
+  text-align: center;
 }
 
 img:hover {
@@ -118,6 +134,10 @@ div.css-0 {
   margin-right: 10px;
 }
 
+.chakra-text.css-1j0eg73 {
+  margin: 0;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 55px !important;
@@ -141,7 +161,7 @@ div.css-0 {
   }
 
   p {
-    font-size: 19px;
+    font-size: 17px;
     margin: 5%;
     text-align: start;
   }

@@ -79,7 +79,7 @@ const Article = ({ data }) => {
                 <Text color="#333333" fontSize="lg">
                   Por {article.author.name}
                 </Text>
-                <Text className="uk-text-meta uk-margin-remove-top">
+                <Text color="#a1a4a9" fontSize="xs">
                   <Moment locale="pt-br" format="DD/MM/YYYY - h:mm">
                     {article.published_at}
                   </Moment>
