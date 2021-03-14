@@ -50,7 +50,7 @@ $ cd BLOG-Tecnolodia
 # Install Dependencies
 $ yarn install
 
-# Run Aplication
+# Run Application
 $ gatsby develop
 ```
 
